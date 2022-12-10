@@ -1,0 +1,72 @@
+// code for providing details using struct datatpye.
+
+#include <iostream>
+using namespace std;
+
+struct Family {
+	char gender;
+	string name;
+	int age;
+};
+
+int main() {
+	Family s1, s2, s3;
+	char o,y,n;
+	cout << "Provide us detail of 3 Offsprings" << endl;
+	cout << "Y - Yes " << endl << "N - No" << endl;
+	cin >> o;
+
+	switch (o) {
+
+		case 'y': {
+		cout << "Enter detail of 1st Offspring:" << endl;
+		cout << "Gender :";
+		cin >> s1.gender;
+		cout << "\nName :";
+		cin >> s1.name;
+		cout << "\nAge :";
+		cin >> s1.age;
+
+		cout << "\nEnter detail of 2nd Offspring:" << endl;
+		cout << "Gender :";
+		cin >> s2.gender;
+		cout << "\nName :";
+		cin >> s2.name;
+		cout << "\nAge :";
+		cin >> s2.age;
+
+		cout << "\nEnter detail of 3rd Offspring:" << endl;
+		cout << "Gender :";
+		cin >> s3.gender;
+		cout << "\nName :";
+		cin >> s3.name;
+		cout << "\nAge :";
+		cin >> s3.age;
+
+		cout << "\n====================================";
+		cout << "\nThe Details Of 1st CHILD" << endl;
+		cout << "Name :" << " " << s1.name << endl;
+		cout << "Gender :" << " " << s1.gender << endl;
+		cout << "Age :" << " " << s1.age << endl;
+
+		cout << "\n====================================";
+		cout << "\nThe Details Of 2nd CHILD" << endl;
+		cout << "Name :" << " " << s2.name << endl;
+		cout << "Gender :" << " " << s2.gender << endl;
+		cout << "Age :" << " " << s2.age << endl;
+
+		cout << "\n====================================";
+		cout << "\nThe Details Of 3rd CHILD" << endl;
+		cout << "Name :" << " " << s3.name << endl;
+		cout << "Gender :" << " " << s3.gender << endl;
+		cout << "Age :" << " " << s3.age << endl;
+		break;
+		}
+
+		default: {
+		cout << "Thank you for your co-operation! :)" << endl;
+				}
+	}
+	return 0;
+}
+//code by suhaib
