@@ -1,0 +1,38 @@
+//A simple Calculator using Functions
+#include <iostream>
+using namespace std;
+
+int sum(int a, int b, int& result) {
+	result = a + b;
+	return result;
+}
+int sub(int c, int d, int& result) {
+	result = c - d;
+	return result;
+}
+float mul(int e, int f, float& result) {
+	result = e * f;
+	return result;
+}
+float div(float g, float h, int& result) {
+	result = (float)g / (float)h;
+	return result;
+}
+int main() {
+	int num1, num2;
+	int r1, r2, r3;
+	float r4;
+
+	cout << " Enter the first number : " << endl;
+	cin >> num1;
+	cout << "Enter your second number :" << endl;
+	cin >> num2;
+
+	cout << "The Addition of "<<num1 << " and " << num2 << " is : "  << sum(num1, num2, r1) << endl;
+	 cout << "The Subtraction of " << num1 << " and " << num2 << " is : "  << sub(num1, num2, r2)  << endl;
+	 cout << "The Division of " << num1 << " and " << num2 << " is : "  << div(num1, num2, r3) << endl;
+	 cout << "The Multiplication of " << num1 << " and " << num2 << " is :"  << mul(num1, num2, r4)  << endl;
+
+	return 0;
+}
+//code by suhaib
