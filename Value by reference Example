@@ -1,0 +1,62 @@
+//Function code Example using by reference
+#include <iostream>
+using namespace std;
+
+void cal(int a, int b, int& tot) {
+	tot = a * b;
+}
+int main() {
+	int quant, total;
+	int n1, n2, n3, n4, n5, n6, n7, n8;
+	int ap = 280, ba = 200, ca = 120, cab = 80, ma = 300, pea = 100, gra = 200, tom = 150;
+	cout << "\tn1 - Apple = 280" << endl;
+	cout << "\tn2 - Banana = 200" << endl;
+	cout << "\tn3 - Carrot = 120" << endl;
+	cout << "\tn4 - Cabbage = 80" << endl;
+	cout << "\tn5 - Mango = 300" << endl;
+	cout << "\tn6 - Peach = 100" << endl;
+	cout << "\tn7 - Grapes = 200" << endl;
+	cout << "\tn8 - Tomatoes = 150" << endl;
+	cout << endl;
+	cout << "\t==========================" << endl;
+
+	cout << "\tThe Quantity of Apple" << endl; cout << "\t =>";
+	cin >> n1;
+	cout << "\tThe Quantity of Banana" << endl; cout << "\t =>";
+	cin >> n2;
+	cout << "\tThe Quantity of Carrot " << endl; cout << "\t =>";
+	cin >> n3;
+	cout << "\tThe Quantity of Cabbage " << endl; cout << "\t =>";
+	cin >> n4;
+	cout << "\tThe Quantity of Mango " << endl; cout << "\t =>";
+	cin >> n5;
+	cout << "\tThe Quantity of Peach " << endl; cout << "\t =>";
+	cin >> n6;
+	cout << "\tThe Quantity of Grapes " << endl; cout << "\t =>";
+	cin >> n7;
+	cout << "\tThe Quantity of Tomatoes " << endl; cout << "\t =>";
+	cin >> n8;
+	cout << endl;
+	cout << "\t==========================" << endl;
+
+	cal(n1, ap, total);
+	cout << "\tFor Apples: " << total << endl;
+	cal(n2, ba, total);
+	cout << "\tFor Banana: " << total << endl;
+	cal(n3, ca, total);
+	cout << "\tFor Carrot: " << total << endl;
+	cal(n4, cab, total);
+	cout << "\tFor Cabbage: " << total << endl;
+	cal(n5, ma, total);
+	cout << "\tFor Mango: " << total << endl;
+	cal(n6, pea, total);
+	cout << "\tFor Peach: " << total << endl;
+	cal(n7, gra, total);
+	cout << "\tFor Grapes: " << total << endl;
+	cal(n8, tom, total);
+	cout << "\tFor Tomatoes: " << total << endl;
+	cout << "\t==========================" << endl;
+
+	return 0;
+}
+//code by suhaib
